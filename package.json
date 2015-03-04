@@ -1,0 +1,44 @@
+{
+  "name": "todo",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.10.2",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.1.1",
+    "express": "~4.11.1",
+    "jade": "~1.9.1",
+    "morgan": "~1.5.1",
+    "serve-favicon": "~2.2.0",
+    "mongoose": "~3.8.0",
+    "bcrypt-nodejs": "~0.0.3",
+    "bson": "~0.2.19",
+    "express-session": "~1.10.3"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "public/public",
+      "lib": "public/public",
+      "packages": "public/public"
+    },
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.3.13",
+      "bcrypt-nodejs": "~0.0.3",
+      "body-parser": "~1.10.2",
+      "bootstrap": "github:twbs/bootstrap@^3.3.2",
+      "bson": "~0.2.19",
+      "cookie-parser": "~1.3.3",
+      "debug": "~2.1.1",
+      "express": "~4.11.1",
+      "express-session": "~1.10.3",
+      "jade": "~1.9.1",
+      "jquery": "github:components/jquery@^2.1.3",
+      "mongoose": "~3.8.0",
+      "morgan": "~1.5.1",
+      "serve-favicon": "~2.2.0"
+    }
+  }
+}
