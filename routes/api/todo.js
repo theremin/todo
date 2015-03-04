@@ -21,3 +21,24 @@ module.exports.getAllTodos = function(req, res) {
 		res.json({todos: todos});
 	});
 };
+
+module.exports.updateTodo = function( req, res, id ) {
+
+	Todo.findByIdAndUpdate( id, { $set: req.body.todo }, function( err, todo ){
+
+		if( err ) {
+			res.send( err );
+		}
+		res.json({todo: todo});
+	});
+}
+
+module.exports.deleteTodo = function( req, res, id ) {
+
+	Todo.findByIdAndRemove( id, function( err ){
+		if( err ) {
+			res.send( err );	
+		}
+		res.sendStatus( 200 );	
+	});
+}
